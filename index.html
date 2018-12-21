@@ -4,18 +4,25 @@
 <head>
     <meta charset="utf-8">
     <title>Bowling Scores</title>
+    <style>
+        label, input {
+            font-size: 16px;
+        }
+    </style>
 </head>
 
 <body>
     <div id="score-string">
         <form>
-            <label for="bowling-string">Add Bowling Score String</label>
-            <input type="text" id="frame-input" value="">
+            <label for="bowling-string">Add Bowling Score String:</label>
+            <br>
+            <input type="text" id="frame-input" value="" size="35">
             <br>
             <button type="button" onclick="displayScore()">Display</button>
         </form>
     </div>
     <div>
+        <p>Total Score: </p>
         <p id="score"></p>
     </div>
 </body>
